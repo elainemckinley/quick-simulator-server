@@ -1,0 +1,14 @@
+{
+  "name": "quick-simulator-server",
+  "version": "0.1.0",
+  "description": "Configurable HTTP simulators for testing against",
+  "main": "simulator.js",
+  "author": "Austin McKinley",
+  "license": "MIT",
+  "scripts": {
+    "start": "node testConfig.js"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
