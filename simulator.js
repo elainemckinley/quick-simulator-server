@@ -1,6 +1,6 @@
 const express = require('express')
 
-const simulator = (config) => {
+const simulator = (config, port) => {
     const app = express()
 
     Object.keys(config).forEach(route => {
@@ -13,7 +13,7 @@ const simulator = (config) => {
         addRoutes(app, route, routeConfig)
     })
 
-    app.listen(3000, () => console.log('Running on port 3000'))
+    app.listen(port, () => console.log(`Running on port ${port}`))
 }
 
 const addRoutes = (app, route, routeConfigs) => {
