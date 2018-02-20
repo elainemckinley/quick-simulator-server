@@ -1,6 +1,6 @@
 {
   "name": "quick-simulator-server",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Configurable HTTP simulators for testing against",
   "main": "simulator.js",
   "author": "Austin McKinley",

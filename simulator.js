@@ -19,7 +19,7 @@ const simulator = (config, port) => {
 const addRoutes = (app, route, routeConfigs) => {
     routeConfigs.forEach(routeConfig => {
         app[routeConfig.method](route, (req, res) => {
-            res.status = routeConfig.responseStatus
+            res.status(routeConfig.responseStatus)
             res.send(routeConfig.responseBody)
         })
     })
